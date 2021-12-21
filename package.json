@@ -1,0 +1,13 @@
+{
+  "name": "codebase",
+  "version": "1.0.0",
+  "description": "a set of code examples",
+  "main": "index.js",
+  "repository": "https://github.com/yrjkqq/codebase.git",
+  "author": "yrjkqq <yuangu.1994@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "babel-config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "yrjkqq",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.5",
+    "@babel/plugin-transform-arrow-functions": "^7.16.5",
+    "@babel/plugin-transform-runtime": "^7.16.5",
+    "@babel/preset-env": "^7.16.5"
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "start": "node ./lib/index.js"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.16.5"
+  }
+}
