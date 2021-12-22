@@ -13,9 +13,11 @@
   },
   "scripts": {
     "build": "babel src --out-dir lib",
-    "start": "node ./lib/index.js"
+    "start": "node ./lib/index.js",
+    "build:config": "$env:BABEL_SHOW_CONFIG_FOR = './src/index.js'; yarn build"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "@babel/runtime": "^7.16.5"
   }
 }
