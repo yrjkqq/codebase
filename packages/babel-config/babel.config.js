@@ -8,10 +8,19 @@ const presets = [
         chrome: "67",
         safari: "11.1",
       },
-      useBuiltIns: "usage",
-      corejs: "2.6.12",
+      useBuiltIns: false,
+      // corejs: "2.6.12",
     },
   ],
 ];
 
-module.exports = { presets };
+const plugins = [
+  [
+    "@babel/plugin-transform-runtime",
+    {
+      corejs: 2,
+    },
+  ],
+];
+
+module.exports = { presets, plugins };

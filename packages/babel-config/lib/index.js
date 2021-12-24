@@ -1,14 +1,20 @@
 "use strict";
 
-require("core-js/modules/es6.symbol.js");
+var _interopRequireDefault = require("@babel/runtime-corejs2/helpers/interopRequireDefault");
 
-require("core-js/modules/web.dom.iterable.js");
+var _symbol = _interopRequireDefault(require("@babel/runtime-corejs2/core-js/symbol"));
 
-var sym = Symbol();
-var promise = Promise.resolve();
+var _promise = _interopRequireDefault(require("@babel/runtime-corejs2/core-js/promise"));
+
+var _getIterator2 = _interopRequireDefault(require("@babel/runtime-corejs2/core-js/get-iterator"));
+
+var sym = (0, _symbol.default)();
+
+var promise = _promise.default.resolve();
+
 var arr = ["1", "2"];
 var check = arr.includes("yeah!");
 console.log("check: ", check);
-console.log(arr[Symbol.iterator]());
+console.log((0, _getIterator2.default)(arr));
 
 const fn = () => 1;
